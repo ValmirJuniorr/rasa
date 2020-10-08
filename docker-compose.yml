@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rasa:
+    build: .
+    container_name: rasa
+    tty: true
+    command: bash
+    working_dir: /chat
+    volumes:
+      - ./chat:/chat
