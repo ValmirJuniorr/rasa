@@ -1,7 +1,7 @@
 version: '3'
 services:
   rasa:
-    build: .
+    image: valmirjunior/rasa:1.10.0
     container_name: rasa
     tty: true
     command: bash
