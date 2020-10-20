@@ -3,8 +3,10 @@ services:
   rasa:
     image: valmirjunior/rasa:2.0.0
     container_name: rasa
-    tty: true
     command: bash
-    working_dir: /chat
+    ports:
+      - 5005:5005
+    tty: true
     volumes:
       - ./chat:/chat
+    working_dir: /chat
