@@ -1,0 +1,8 @@
+version: "2.0"
+
+rules:
+
+- rule: Diga adeus a qualquer momento que o usuário dizer adeus
+  steps:
+  - intent: despedida
+  - action: utter_despedida

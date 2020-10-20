@@ -1,0 +1,45 @@
+version: "2.0"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - olá
+    - tudo bem?
+
+- intent: despedida
+  examples: |
+    - adeus
+    - até logo
+    - até mais
+
+- intent: afirmacao
+  examples: |
+    - s
+    - sim
+    - isso
+    - correto
+    - isso mesmo
+
+- intent: negacao
+  examples: |
+    - n
+    - não
+    - nada disso
+
+- intent: cardapio
+  examples: |
+    - o que voce tem?
+    - quais as opções?
+    - quero ver o cardapio
+
+- intent: massa
+  examples: |
+    - pizza
+    - pastel
+
+- intent: churrasco
+  examples: |
+    - carne
+    - porco
+    - frango

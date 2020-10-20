@@ -1,0 +1,54 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: churrasco
+  steps:
+  - user: |
+     Oi
+    intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - user: |
+      sim
+    intent: afirmacao
+  - action: utter_mostra_cardapio
+  - user: |
+      carne
+    intent: churrasco
+  - action: utter_preparando_churrasco
+
+- story: massa
+  steps:
+  - user: |
+     Ola
+    intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - user: |
+      s
+    intent: afirmacao
+  - action: utter_mostra_cardapio
+  - user: |
+      pizza
+    intent: massa
+  - action: utter_preparando_massa
+
+- story: não quer ver cardapio
+  steps:
+  - user: |
+     Oi
+    intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - user: |
+      n
+    intent: negacao
+  - action: utter_triste_adeus
+
+- story: despedida
+  steps:
+  - user: |
+     adeus
+    intent: despedida
+  - action: utter_despedida

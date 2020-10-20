@@ -1,0 +1,31 @@
+version: "2.0"
+
+stories:
+
+- story: churrasco
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - intent: afirmacao
+  - action: utter_mostra_cardapio
+  - intent: churrasco
+  - action: utter_preparando_churrasco
+
+- story: massa
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - intent: afirmacao
+  - action: utter_mostra_cardapio
+  - intent: massa
+  - action: utter_preparando_massa
+
+- story: não quer ver cardapio
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_quer_ver_cardapio
+  - intent: negacao
+  - action: utter_triste_adeus

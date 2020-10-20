@@ -1,0 +1,39 @@
+version: "2.0"
+
+intents:
+  - saudacao
+  - despedida
+  - afirmacao
+  - negacao
+  - cardapio
+  - massa
+  - churrasco
+
+responses:
+  utter_saudacao:
+  - text: "Olá, prazer me chamo bot!!!"
+  - text: "Oi, sou seu assitente virtual!!!"
+
+  utter_despedida:
+  - text: "Até logo!"
+  - text: "Tchau, se cuida!!!"
+
+  utter_quer_ver_cardapio:
+  - text: "Quer ver o cardápio?"
+
+  utter_triste_adeus:
+  - text: "Que pena, quando quiser só tentar contato novamente, ok?"
+
+
+  utter_mostra_cardapio:
+  - text: "Temos massas(Pizza, Pastel) e churrasco(carne, porco e frango), o que você quer?"  
+
+  utter_preparando_massa:
+  - text: "Preparando uma massa deliciosa"
+
+  utter_preparando_churrasco:
+  - text: "Preparando um churrasco delicioso"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
